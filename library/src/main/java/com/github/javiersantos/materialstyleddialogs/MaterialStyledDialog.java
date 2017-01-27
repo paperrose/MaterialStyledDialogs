@@ -37,6 +37,10 @@ public class MaterialStyledDialog {
         mBuilder = builder;
         mBuilder.dialog = initMaterialStyledDialog(builder);
     }
+    
+    public final MaterialDialog getDialog() {
+        return mBuilder.dialog;
+    }
 
     @UiThread
     public void show() {
